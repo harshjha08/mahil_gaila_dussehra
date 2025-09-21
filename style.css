@@ -1,183 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
-/* background-image: url(background\ images.jpg);
- background-size: cover;
-background-repeat: no-repeat; */
-   
-}
-nav{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    width:100%;
-    height: 2rem;
-    padding: 2rem;
-}
-nav h1{
-    background: transparent;
-    font-style: italic;
-    color: darkorange;
-    font-family: 'Times New Roman', Times, serif;
-}
-.main-content{
-    margin: 3rem;
-    margin-top: 0;
-    padding: 5px;
-    height: 36rem;
-/* border: 2px solid black;
-    border-radius: 20px; */
-}
-.main-content p{
-    font-weight: bolder;
-    font-size: 2rem;
-    color: burlywood;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    background: transparent;
-}
-.cards-box{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 4rem;
-    background: transparent;
-}
-#card-box2{
-    margin-top: 3rem;
-}
-/* .cards-box2{
-    display: flex;
-    justify-content: center;
-    background: green;
-    margin-top: 2rem;
-} */
-#cards{
-    padding: 0.5rem;
-    height: 14rem;
-    width: 15rem;
-    border: 2px solid black;
-    border-radius: 1rem;
-    transition: transform 2s ease-in;
-}
-#cards:hover{
-    border: 4px solid rgb(58, 201, 230);
-}
-.boxesInCard{
-    border: 1px solid red;
-    height: 9rem;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
-    background-size: cover;
-background-repeat: no-repeat;
-}
-#box1{
-background-image: url(day1.jpeg);
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(backgroundimages.jpg);
 
 }
-#box2{
-    background-image: url(day2.jpeg);
 
+body {
+  font-family: 'Times New Roman', Times, serif;
+  /* background: #fdfdfd; */
 }
-#box3{
-    background-image: url(day3.jpeg);
 
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
 }
-#box4{
-    background-image: url(day4.jpeg);
+nav h1 {
+  font-style: italic;
+  color: darkorange;
+}
 
+/* Main */
+.main-content {
+  margin: 1.5rem;
+  text-align: center;
 }
-#box5{
-    background-image: url(day5.jpg);
+.main-content p {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: burlywood;
+}
 
+/* Cards */
+.cards-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
-#box6{
-    background-image: url(day6.jpeg);
+.card {
+  width: 15rem;
+  border: 2px solid black;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+}
+.card:hover {
+  border: 3px solid rgb(58, 201, 230);
+}
+.boxesInCard {
+  height: 10rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
 
-}
-#box8{
-    background-image: url(day8.jpeg);
+/* === Image Backgrounds === */
+#box1 { background-image: url(day1.jpeg); }
+#box2 { background-image: url(day2.jpeg); }
+#box3 { background-image: url(day3.jpeg); }
+#box4 { background-image: url(day4.jpeg); }
+#box5 { background-image: url(day5.jpg); }
+#box6 { background-image: url(day6.jpeg); }
+#box8 { background-image: url(day8.jpeg); }
+#box9 { background-image: url(day9.jpeg); }
 
+/* Buttons */
+.btn-box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem;
 }
-#box9{
-    background-image: url(day9.jpeg);
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  background: blue;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: darkblue;
+}
 
+/* Popup */
+.pop-up-box {
+  border: 2px solid black;
+  border-radius: 8px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 90%;
+  max-width: 600px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  background: linear-gradient(45deg, #77ffd7, #3182c9);
+  font-size: 1rem;
 }
-.btn-box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    gap: 1rem;
+.pop-up-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
 }
-button{
-    padding: 5px;
-    width: 6rem;
-    border: none;
-    border-radius: 3px;
-    background: blue;
-    color: white;
+.pop-up-box th,
+.pop-up-box td {
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align: center;
 }
-.pop-up-box{
-    border: 2px solid black;
-    border-radius: 8px;
-    display: none;
-    justify-content: center;
-    align-items: center;
-padding: 2rem;
-    height: 20rem;
-    width: 50%;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1001;
-    background: rgba(0,0,0,0.3);
-    backdrop-filter: blur(5px);
-    text-align: left;
-    font-size: xx-large;
-    gap: 2rem;
+#close-btn {
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  nav h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .main-content p {
+    font-size: 1.3rem;
+  }
+  .card {
+    width: 80%;
+  }
+  .boxesInCard {
+    height: 8rem;
+  }
+}
+@media (max-width: 480px) {
+  .main-content p {
+    font-size: 1.1rem;
+  }
+  .btn-box {
     flex-direction: column;
-}
-table{
-    display: flex;
-    
-    justify-content: center;
-    gap: 2rem;
-}
-table tr{
-    display: flex;
-gap: 4rem;
-}
-table th{
-    display: flex;
-    gap: 4rem;
-}
-#close-btn{
-    height: 3rem;
-    width: 20rem;
-    border-radius: 2rem;
-    font-size: 1rem;
-}
-@media (max-width: 600px) {
-    #cards {
-        width: 90%;
-    }
-    .btn-box {
-        flex-direction: column ;
-        gap: 0.5rem;
-    }
-    button {
-        width: 100%;
-    }
-    .main-content p {
-        font-size: 1.3rem;
-    }
-    .boxInCard {
-        height: 8rem;
-    }
+    gap: 0.5rem;
+  }
+  button {
+    width: 100%;
+  }
 }
