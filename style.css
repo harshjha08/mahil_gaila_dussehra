@@ -2,13 +2,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-image: url(backgroundimages.jpg);
+  
+  /* background: red; */
+  
 
 }
-
 body {
   font-family: 'Times New Roman', Times, serif;
   /* background: #fdfdfd; */
+   background-image: url(backgroundimages.jpg); 
 }
 
 /* Navbar */
@@ -113,6 +115,8 @@ button:hover {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 1rem;
+  background: transparent;
+  
 }
 .pop-up-box th,
 .pop-up-box td {
