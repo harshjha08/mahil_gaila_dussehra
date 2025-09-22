@@ -46,13 +46,17 @@ nav h1 {
 }
 .card {
   width: 15rem;
-  border: 2px solid black;
+  border: 5px solid rgb(57, 22, 216);
   border-radius: 1rem;
   overflow: hidden;
   transition: 0.3s ease-in-out;
 }
 .card:hover {
   border: 3px solid rgb(58, 201, 230);
+}
+.card p{
+  color: rgb(254, 78, 9);
+  outline: #77ffd7;
 }
 .boxesInCard {
   height: 10rem;
