@@ -133,6 +133,43 @@ button:hover {
   border-radius: 2rem;
   font-size: 1rem;
 }
+footer{
+  background: linear-gradient(45deg, red, blue);
+  color: white;
+  margin-bottom: 0;
+  position: relative;
+  height: 13rem;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  text-align: center;
+}
+h3{
+  margin-top: 1rem;
+}
+.icon-box{
+  font-size: 1rem;
+  margin-top: 5px;
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.text-box{
+  margin-bottom: 0;
+}
+.icon-box i{
+  font-size: 2rem;
+  margin-top: 1rem;
+  padding: 10px;
+  background: #e4215f8d;
+  border-radius: 50%;
+  
+}
+.icon-box i:hover{
+  background: #21e44f8d;
+  border-radius: 2rem;
+}
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
